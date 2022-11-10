@@ -1,30 +1,20 @@
 package com.google.testapp;
 
-import android.app.Activity;
 import android.os.Bundle;
 
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.Toast;
-
-import com.google.android.material.navigation.NavigationView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ProductsFragment#newInstance} factory method to
+ * Use the {@link DetailProductFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ProductsFragment extends Fragment {
+public class DetailProductFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +25,7 @@ public class ProductsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ProductsFragment() {
+    public DetailProductFragment() {
         // Required empty public constructor
     }
 
@@ -45,11 +35,11 @@ public class ProductsFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ProductsFragment.
+     * @return A new instance of fragment DetailProductFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ProductsFragment newInstance(String param1, String param2) {
-        ProductsFragment fragment = new ProductsFragment();
+    public static DetailProductFragment newInstance(String param1, String param2) {
+        DetailProductFragment fragment = new DetailProductFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,15 +55,12 @@ public class ProductsFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view1 = inflater.inflate(R.layout.fragment_products, container, false);
-        view1.findViewById(R.id.box_product1).setOnClickListener(view -> {
-            Navigation.findNavController(view).navigate(R.id.action_menuProducts_to_detailProductFragment);
-        });
-
+        View view1 = inflater.inflate(R.layout.fragment_detail_product, container, false);
 
         return view1;
     }

@@ -7,246 +7,254 @@
     tools:context=".ContactFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:padding="16dp"
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:textStyle="bold"
-            android:text="STORE INFORMATION"
-            android:textSize="20dp"
-            android:textColor="#111"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </TextView>
+        android:layout_height="match_parent">
         <LinearLayout
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal"
-            android:id="@+id/layoutAddress"
+            android:padding="16dp"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:layout_gravity="center"
-                android:src="@drawable/ic_location"
-                android:layout_width="30dp"
-                android:layout_height="30dp">
-
-            </ImageView>
-            <LinearLayout
-                android:layout_marginLeft="8dp"
-                android:orientation="vertical"
+            <TextView
+                android:textStyle="bold"
+                android:text="STORE INFORMATION"
+                android:textSize="20dp"
+                android:textColor="#111"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:text="Ho Chi Minh City"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-                <TextView
-                    android:text="VietNam"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-
-            </LinearLayout>
-
-        </LinearLayout>
-        <View
-            android:layout_marginTop="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#ccc">
-
-        </View>
-        <LinearLayout
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            android:id="@+id/layoutEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_gravity="center"
-                android:src="@drawable/ic_email"
-                android:layout_width="30dp"
-                android:layout_height="30dp">
-
-            </ImageView>
+            </TextView>
             <LinearLayout
-                android:layout_marginLeft="8dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:text="Email us:"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-                <TextView
-                    android:text="4hshoe@gmail.com"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_marginTop="12dp"
-            app:cardElevation="3dp"
-            app:cardCornerRadius="10dp"
-            app:cardUseCompatPadding="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill">
-            <LinearLayout
-                android:padding="30dp"
-                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:id="@+id/layoutAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:text="CONTACT US"
-                    android:textSize="20dp"
-                    android:textColor="#111"
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                </TextView>
-                <TextView
-                    android:text="Subject"
-                    android:layout_marginTop="16dp"
+                    <TextView
+                        android:text="Ho Chi Minh City"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:text="VietNam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+
+            </View>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:id="@+id/layoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_email"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                </TextView>
-                <RelativeLayout
-                    android:layout_marginTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <Spinner
-                        android:background="@drawable/boder_box"
-                        android:id="@+id/spinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp">
-                    </Spinner>
+                    <TextView
+                        android:text="Email us:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:layout_marginRight="4dp"
-                        android:layout_centerInParent="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/ic_arrow_drop_down">
+                    </TextView>
+                    <TextView
+                        android:text="4hshoe@gmail.com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-                    </ImageView>
+                    </TextView>
 
-                </RelativeLayout>
-
-                <TextView
-                    android:text="Email Address"
-                    android:layout_marginTop="16dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
-                <EditText
-                    android:paddingLeft="12dp"
-                    android:hint="your@email.com"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/boder_box"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp">
-                </EditText>
-                <TextView
-                    android:text="Message"
-                    android:layout_marginTop="16dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
-                <EditText
-                    android:paddingLeft="12dp"
-                    android:gravity="top"
-                    android:hint="How can we help?"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/boder_box"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp">
-                </EditText>
-                <Button
-                    android:text="SEND"
-                    android:layout_marginTop="12dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp">
-
-                </Button>
-
-
-
-
+                </LinearLayout>
 
             </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
-        <View
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:layout_width="120dp"
-            android:layout_height="1dp"
-            android:background="#ccc">
-        </View>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="12dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill">
+                <LinearLayout
+                    android:padding="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="CONTACT US"
+                        android:textSize="20dp"
+                        android:textColor="#111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:text="Subject"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <RelativeLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:background="@drawable/boder_box"
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+                        </Spinner>
+
+                        <ImageView
+                            android:layout_marginRight="4dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_arrow_drop_down">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="Email Address"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <EditText
+                        android:paddingLeft="12dp"
+                        android:hint="your@email.com"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/boder_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                    </EditText>
+                    <TextView
+                        android:text="Message"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <EditText
+                        android:paddingLeft="12dp"
+                        android:gravity="top"
+                        android:hint="How can we help?"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/boder_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                    </EditText>
+                    <Button
+                        android:text="SEND"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp">
+
+                    </Button>
 
 
-        <LinearLayout
-            android:weightSum="5"
-            android:gravity="center"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_logo_facebook"
-                android:layout_width="30dp"
-                android:layout_height="30dp">
-            </ImageView>
-            <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_logo_twitter"
-                android:layout_width="30dp"
-                android:layout_height="30dp">
-            </ImageView>
-            <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_logo_tiktok"
-                android:layout_width="30dp"
-                android:layout_height="30dp">
-            </ImageView>
-            <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_logo_instagram"
-                android:layout_width="30dp"
-                android:layout_height="30dp">
-            </ImageView>
-            <ImageView
-                android:layout_weight="1"
-                android:src="@drawable/ic_logo_youtube"
-                android:layout_width="30dp"
-                android:layout_height="30dp">
-            </ImageView>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </View>
+
+
+            <LinearLayout
+                android:weightSum="5"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_logo_facebook"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+                </ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_logo_twitter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+                </ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_logo_tiktok"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+                </ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_logo_instagram"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+                </ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_logo_youtube"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+                </ImageView>
+
+            </LinearLayout>
+            <View
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </View>
+
 
         </LinearLayout>
-        <View
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:layout_width="120dp"
-            android:layout_height="1dp"
-            android:background="#ccc">
-        </View>
 
 
-    </LinearLayout>
+
+    </ScrollView>
+
 
 
 

@@ -3,6 +3,7 @@ package com.google.testapp;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,7 +60,11 @@ public class BlogFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_blog, container, false);
-        return view;
+        View view1 = inflater.inflate(R.layout.fragment_blog, container, false);
+        view1.findViewById(R.id.btnReadMore1).setOnClickListener(view -> {
+            Navigation.findNavController(view).navigate(R.id.action_menuBlog_to_detailBlogFragment2);
+
+        });
+        return view1;
     }
 }

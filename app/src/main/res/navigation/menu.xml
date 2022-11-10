@@ -9,20 +9,56 @@
         android:id="@+id/menuHome"
         android:name="com.google.testapp.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_menuHome_to_menuProducts3"
+            app:destination="@id/menuProducts" />
+        <action
+            android:id="@+id/action_menuHome_to_menuBlog2"
+            app:destination="@id/menuBlog" />
+        <action
+            android:id="@+id/action_menuHome_to_menuContact2"
+            app:destination="@id/menuContact" />
+    </fragment>
     <fragment
         android:id="@+id/menuProducts"
         android:name="com.google.testapp.ProductsFragment"
         android:label="Products"
-        tools:layout="@layout/fragment_products" />
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_menuProducts_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+    </fragment>
     <fragment
         android:id="@+id/menuBlog"
         android:name="com.google.testapp.BlogFragment"
         android:label="Blog"
-        tools:layout="@layout/fragment_blog" />
+        tools:layout="@layout/fragment_blog" >
+        <action
+            android:id="@+id/action_menuBlog_to_detailBlogFragment2"
+            app:destination="@id/detailBlogFragment" />
+    </fragment>
     <fragment
         android:id="@+id/menuContact"
         android:name="com.google.testapp.ContactFragment"
         android:label="fragment_contact"
         tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.google.testapp.DetailProductFragment"
+        android:label="fragment_detail_product"
+        tools:layout="@layout/fragment_detail_product" >
+        <action
+            android:id="@+id/action_detailProductFragment_to_menuProducts"
+            app:destination="@id/menuProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailBlogFragment"
+        android:name="com.google.testapp.DetailBlogFragment"
+        android:label="fragment_detail_blog"
+        tools:layout="@layout/fragment_detail_blog" >
+        <action
+            android:id="@+id/action_detailBlogFragment_to_menuBlog"
+            app:destination="@id/menuBlog" />
+    </fragment>
 </navigation>

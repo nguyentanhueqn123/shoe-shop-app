@@ -126,6 +126,7 @@
                 android:layout_height="wrap_content">
             </TextView>
             <Button
+                android:id="@+id/btnReadMore1"
                 android:textSize="18dp"
                 android:background="#E24647"
                 android:text="READ MORE"
