@@ -1,13 +1,21 @@
 package com.google.testapp;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +69,22 @@ public class DetailBlogFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view1 = inflater.inflate(R.layout.fragment_detail_blog, container, false);
+        ScrollView scrollVieww = (ScrollView) view1.findViewById(R.id.scrollVieww);
+        ImageView imageView = view1.findViewById(R.id.btnClickBack);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scrollVieww.fullScroll(ScrollView.FOCUS_UP);
+            }
+        });
+        TextView tvReact = view1.findViewById(R.id.tvReact);
+        tvReact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvReact.setTextColor(Color.parseColor("#1873EB"));
+
+            }
+        });
 
 
         return view1;

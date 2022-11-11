@@ -6,7 +6,9 @@
         <entry key="..\:/Users/HUE PC/AndroidStudioProjects/testapp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_box.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.1765" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_upward.xml" value="0.1725" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_date_range.xml" value="0.1765" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_date_range_black.xml" value="0.1725" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_filter_solid.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_heart_black.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_heart_outline.xml" value="0.1765" />
@@ -15,6 +17,7 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_logo_twitter.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_logo_youtube.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_menu.xml" value="0.181" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_message_black.xml" value="0.1725" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_message_solid.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_person.xml" value="0.181" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_search.xml" value="0.181" />
@@ -24,7 +27,7 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_blog.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_contact.xml" value="0.264" />
-        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_blog.xml" value="0.1936725096194955" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_blog.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.20521590423257802" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_home.xml" value="0.20521590423257802" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_products.xml" value="0.264" />

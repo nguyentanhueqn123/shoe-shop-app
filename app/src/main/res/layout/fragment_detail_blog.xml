@@ -1,15 +1,532 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailBlogFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
+
+
+    <ScrollView
+        android:id="@+id/scrollVieww"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="BLOG" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="12dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:text="The most popular shoe models in Christmas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_date_range_black"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:text="On: Monday, Nov 20, 2022"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_heart_black"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:text="Hit: 69"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_message_solid"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:text="Comment: 69"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Christmas is almost upon us which means many of you will soon be surrounded by family, watching basketball, and getting into arguments with your uncle who has some questionable political opinions. Not to mention, you will probably be feasting on some great food that will have you feeling full for an entire week. The closer we get to the 25th, the more we begin to think about our outfits for when we go see our family. When it comes to shoes, this can be a tricky situation. Luckily, some interesting Christmas-themed sneakers have been released over the last few years, albeit many of them have come in the form of basketball shoes."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="If you’re looking for something to complement your ugly Christmas sweater, there are definitely some great sneakers for you. Meanwhile, if you simply prefer to rep the traditional colors of the holiday, then there are plenty of great options for you to choose from. With this in mind, we decided to count down some of the best Christmas sneakers of all-time. Whether you prefer basketball shoes or sneaker essentials, there is a little something for everyone on this list."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            // Start Shoe 1 Blog
+            <TextView
+                android:layout_marginTop="12dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:text="#1: Nike Kobe 6 Grinch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/giay1_blog">
+            </com.makeramen.roundedimageview.RoundedImageView>
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="For most kids, Christmas is filled with lots of family, food, toys and Cartoons. Perhaps no cartoon more famous than The Grinch Who Stole Christmas, which is one of the inspirations for the next pair of kicks on our list, Nike's Kobe 6 Grinch. The shoes feature a Grinch green upper with red and black accents, but what most people don't realize is the shoes are also inspired by the green mamba snake, hence the scale texture of the upper. These classic Christmas shoes are set to be revamped this holiday season as Nike will be releasing an updated Kobe 6 Protro version. Make sure you set your alarms so you can grab your Christmas L's this holiday season!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            // End Shoe 1 Blog
+
+            // Start Shoe 2 Blog
+            <TextView
+                android:layout_marginTop="12dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:text="#2: Nike Dunk SB High Krampus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            // End Shoe 2 Blog
+
+            // Start Shoe 3 Blog
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/giay2_blog">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="What would Christmas be without naughty and nice? Ol' Saint Nick's buddy Krampus is the life of the party, with his half goat half demon identity. The sneakers feature an image of the European Christmas folklore on the tongue, coupled with synthetic hair along the upper. But the most amazing feature is the illustration of Clause and Kramps living it up on the insoles. These are the perfect kicks for those naughty boys and girls who have been impish this year."
+                android:textSize="16dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:text="#3: Nike SB Dunk High Concepts Ugly Christmas Sweater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/giay3_blog">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="No Christmas list could be complete without one of Nike SB's Ugly Sweater drops. The 2017 special box edition is the most fine tuned of the bunch, featuring a multicolored knit upper, pissed off Christmas animations and glorious color meshing. What really sets this pair off is the satin blue swoosh, which brings a sharp contrast to the incredibly busy upper. This pair is easily one of the greatest Christmas kicks of all time!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            // End Shoe 3 Blog
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Like This"
+                android:textColor="#333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="left"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/boder_box"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_logo_twitter"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:text="Tweet"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/boder_box"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_logo_facebook"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:text="Like"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/boder_box"
+                        android:id="@+id/btnClickBack"
+                        android:src="@drawable/ic_arrow_upward"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+
+            </View>
+            //Comments
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#111"
+                    android:text="Comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                // Start My Comment
+                <LinearLayout
+                    android:weightSum="4"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_weight="0"
+                        app:riv_oval="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/giay1_blog"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+                    </com.makeramen.roundedimageview.RoundedImageView>
+                    <EditText
+                        android:hint="Type your text..."
+                        android:layout_weight="2"
+                        android:padding="8dp"
+                        android:textSize="16dp"
+                        android:background="@drawable/boder_box"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp">
+
+                    </EditText>
+                    <Button
+                        android:layout_weight="2"
+                        android:layout_marginLeft="12dp"
+                        android:background="#E24647"
+                        android:text="SEND"
+                        android:textColor="#fff"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp">
+
+                    </Button>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc">
+
+                </View>
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Most relevant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                // Set layout Comment
+
+                // End My Comment
+
+                // Set layout Comment
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_oval="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/giay1_blog"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+                    </com.makeramen.roundedimageview.RoundedImageView>
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:background="@drawable/boder_box"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:text="An Nhien"
+                                android:textSize="18dp"
+                                android:textColor="#444"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:text="The blog is so great"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+
+
+                        </LinearLayout>
+                        //Start React
+                        <LinearLayout
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tvReact"
+                                android:textStyle="bold"
+                                android:text="Like"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_marginLeft="16dp"
+                                android:text="Reply"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:layout_marginLeft="16dp"
+                                android:text="9 hours"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+                        //End React
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                // Set layout Comment
+
+                // Set layout Comment
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_oval="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/giay1_blog"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+                    </com.makeramen.roundedimageview.RoundedImageView>
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:background="@drawable/boder_box"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:text="Hue Nguyen"
+                                android:textSize="18dp"
+                                android:textColor="#444"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:text="The blog is so great"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+
+
+                        </LinearLayout>
+                        //Start React
+                        <LinearLayout
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:text="Like"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_marginLeft="16dp"
+                                android:text="Reply"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:layout_marginLeft="16dp"
+                                android:text="9 hours"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+                        //End React
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                // Set layout Comment
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
