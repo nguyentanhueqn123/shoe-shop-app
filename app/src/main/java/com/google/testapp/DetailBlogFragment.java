@@ -80,6 +80,7 @@ public class DetailBlogFragment extends Fragment {
         TextView tvReact = view1.findViewById(R.id.tvReact);
         tvReact.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
                 tvReact.setTextColor(Color.parseColor("#1873EB"));
 

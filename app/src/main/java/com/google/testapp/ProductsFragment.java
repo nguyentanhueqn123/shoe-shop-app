@@ -1,6 +1,9 @@
 package com.google.testapp;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.core.view.GravityCompat;
@@ -10,14 +13,27 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.transition.AutoTransition;
+import android.transition.TransitionManager;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -75,6 +91,66 @@ public class ProductsFragment extends Fragment {
         });
 
 
+        // Dialog Filter
+        LinearLayout layoutFilter = view1.findViewById(R.id.layoutFilter);
+        layoutFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFilterDialog(Gravity.CENTER);
+
+            }
+        });
+
+
+
+
+
+
         return view1;
+    }
+
+    private void openFilterDialog(int gravity){
+        final Dialog dialog = new Dialog(this.getContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.layout_dialog_filter);
+
+        Window window = dialog.getWindow();
+        if(window == null){
+            return;
+        }
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        WindowManager.LayoutParams windowAtrributes = window.getAttributes();
+        windowAtrributes.gravity = gravity;
+        window.setAttributes(windowAtrributes);
+
+        if(Gravity.CENTER ==gravity){
+            dialog.setCancelable(true);
+        }
+        else {
+            dialog.setCancelable(false);
+        }
+
+
+        TextView tvClose = dialog.findViewById(R.id.tvClose);
+        tvClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+        Button btnApplyFilter = dialog.findViewById(R.id.btnApplyFilter);
+        btnApplyFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+                Toast.makeText(getContext(), "Apply Filter is successful", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        dialog.show();
+
+
     }
 }
