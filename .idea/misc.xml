@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/Users/HUE PC/AndroidStudioProjects/testapp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_box.xml" value="0.1765" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_round_grey.xml" value="0.177" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_upward.xml" value="0.1725" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_back_white.xml" value="0.177" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_chat.xml" value="0.218" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_date_range.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_date_range_black.xml" value="0.1725" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_filter_solid.xml" value="0.1765" />
@@ -28,7 +31,7 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_blog.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_contact.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_blog.xml" value="0.264" />
-        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.20521590423257802" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.19941836310760283" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_home.xml" value="0.20521590423257802" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_products.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/layout_dialog_filter.xml" value="0.264" />

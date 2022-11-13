@@ -128,7 +128,7 @@
                     </TextView>
                     <TextView
                         android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
+                        android:text="$ 250"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:textColor="#F2434A"
@@ -230,16 +230,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
+
                     // Start Rate Star
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="$ 250"
+                        android:textColor="#F2434A"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -343,16 +344,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
+
                     // Start Rate Star
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="$ 250"
+                        android:textColor="#F2434A"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -449,7 +451,7 @@
                     </TextView>
                     <TextView
                         android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
+                        android:text="$ 250"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:textColor="#F2434A"
@@ -562,7 +564,7 @@
                     </TextView>
                     <TextView
                         android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
+                        android:text="$ 250"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:textColor="#F2434A"
@@ -666,7 +668,7 @@
                     </TextView>
                     <TextView
                         android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
+                        android:text="$ 250"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:textColor="#F2434A"
@@ -781,7 +783,7 @@
                     </TextView>
                     <TextView
                         android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
+                        android:text="$ 250"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:textColor="#F2434A"
@@ -885,7 +887,7 @@
                     </TextView>
                     <TextView
                         android:layout_marginTop="4dp"
-                        android:text="$200 ~ $250"
+                        android:text="$ 250"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:textColor="#F2434A"
