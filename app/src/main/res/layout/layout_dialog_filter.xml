@@ -365,9 +365,9 @@
 
 
                     </HorizontalScrollView>
-
-
                 </LinearLayout>
+
+
                 <View
                     android:layout_marginBottom="16dp"
                     android:layout_marginTop="16dp"
