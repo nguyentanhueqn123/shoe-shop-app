@@ -6,6 +6,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 import androidx.viewpager.widget.ViewPager;
 
@@ -151,7 +152,18 @@ public class DetailProductFragment extends Fragment {
             dialog.setCancelable(false);
         }
 
+        Button btnBuyNow;
+        btnBuyNow = dialog.findViewById(R.id.btnBuyNow);
+        btnBuyNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//
+                Navigation.findNavController(getParentFragment().getView()).navigate(R.id.action_detailProductFragment_to_paymentFragment);
+                dialog.dismiss();
 
+            }
+
+        });
         ImageView btnBackBuyNow = dialog.findViewById(R.id.btnBackBuyNow);
         btnBackBuyNow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -171,6 +183,7 @@ public class DetailProductFragment extends Fragment {
         TextView count = dialog.findViewById(R.id.tvQuantity);
         ImageView add = dialog.findViewById(R.id.btnAdd);
         ImageView remove = dialog.findViewById(R.id.btnRemove);
+
         sl =1;
         add.setOnClickListener(new View.OnClickListener() {
             @Override

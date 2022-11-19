@@ -229,6 +229,7 @@
         android:background="#ccc">
     </View>
     <Button
+        android:id="@+id/btnBuyNow"
         android:layout_margin="16dp"
         android:background="#F2434A"
         android:textColor="#fff"

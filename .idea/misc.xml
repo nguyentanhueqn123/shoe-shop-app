@@ -10,16 +10,19 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_add.xml" value="0.2025" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_forward_ios.xml" value="0.218" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_forward_ios_black.xml" value="0.2045" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_arrow_upward.xml" value="0.1725" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_back_white.xml" value="0.177" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_bookmarks.xml" value="0.218" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_chat.xml" value="0.218" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_circle_check_solid.xml" value="0.2045" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_close.xml" value="0.218" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_contact_support.xml" value="0.218" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_date_range.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_date_range_black.xml" value="0.1725" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_email.xml" value="0.218" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_filter_solid.xml" value="0.1765" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_giftcard.xml" value="0.2045" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_heart_black.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_heart_outline.xml" value="0.1765" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_home.xml" value="0.218" />
@@ -32,6 +35,7 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_menu.xml" value="0.181" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_message_black.xml" value="0.1725" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_message_solid.xml" value="0.1765" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_payment.xml" value="0.2045" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_person.xml" value="0.181" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_push_pin.xml" value="0.218" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/ic_search.xml" value="0.181" />
@@ -42,8 +46,9 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_blog.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_contact.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_blog.xml" value="0.264" />
-        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.20108923334729786" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_home.xml" value="0.20521590423257802" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_payment.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_products.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/item_photo.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/layout_buy_product.xml" value="0.264" />

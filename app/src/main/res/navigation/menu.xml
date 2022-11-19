@@ -51,6 +51,9 @@
         <action
             android:id="@+id/action_detailProductFragment_to_menuProducts"
             app:destination="@id/menuProducts" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailBlogFragment"
@@ -60,5 +63,14 @@
         <action
             android:id="@+id/action_detailBlogFragment_to_menuBlog"
             app:destination="@id/menuBlog" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.google.testapp.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_menuProducts"
+            app:destination="@id/menuProducts" />
     </fragment>
 </navigation>
