@@ -71,8 +71,14 @@ public class PaymentFragment extends Fragment {
                 getActivity().onBackPressed();
             }
         });
-//        action_paymentFragment_to_menuProducts
         TextView tvOrder = view.findViewById(R.id.tvOrder);
+        TextView tvBuyMore = view.findViewById(R.id.tvBuyMore);
+        tvBuyMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_paymentFragment_to_menuProducts);
+            }
+        });
         tvOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

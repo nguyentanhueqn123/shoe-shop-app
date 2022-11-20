@@ -54,6 +54,9 @@
         <action
             android:id="@+id/action_detailProductFragment_to_paymentFragment"
             app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailBlogFragment"
@@ -72,5 +75,17 @@
         <action
             android:id="@+id/action_paymentFragment_to_menuProducts"
             app:destination="@id/menuProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.google.testapp.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_menuProducts"
+            app:destination="@id/menuProducts" />
+        <action
+            android:id="@+id/action_cartFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
     </fragment>
 </navigation>

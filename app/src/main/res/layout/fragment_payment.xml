@@ -156,7 +156,7 @@
                             <TextView
                                 android:gravity="right"
                                 android:text="x2"
-                                android:textSize="20dp"
+                                android:textSize="18dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
                             </TextView>
@@ -181,17 +181,17 @@
                         android:layout_marginLeft="16dp"
                         android:layout_gravity="center"
                         android:text="Voucher"
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
                     <TextView
-                        android:layout_marginRight="16dp"
+                        android:layout_marginRight="4dp"
                         android:gravity="right"
                         android:layout_weight="1"
                         android:layout_gravity="center"
                         android:text="Enter the code"
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
@@ -260,7 +260,7 @@
                     </ImageView>
                     <TextView
                         android:layout_marginLeft="16dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="center_vertical"
                         android:text="Mode of payment"
                         android:textSize="18dp"
                         android:layout_width="wrap_content"
@@ -401,7 +401,7 @@
                     </ImageView>
                     <TextView
                         android:layout_marginLeft="16dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="center_vertical"
                         android:text="Billing Details"
                         android:textSize="18dp"
                         android:layout_width="wrap_content"
@@ -479,7 +479,7 @@
                         android:gravity="right"
                         android:layout_weight="1"
                         android:layout_gravity="center"
-                        android:text="$ 550"
+                        android:text="$ 505"
                         android:textColor="@color/red"
                         android:textSize="16dp"
                         android:layout_width="wrap_content"
@@ -536,13 +536,13 @@
         </LinearLayout>
     </ScrollView>
 
-    // Navbar Shop Now
+    // Navbar Order
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:background="@drawable/boder_box"
+            android:background="#00BFA5"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -550,16 +550,28 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
+
+            <TextView
+                android:id="@+id/tvBuyMore"
+                android:background="#00BFA5"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Buy more">
+            </TextView>
             <View
                 android:layout_gravity="center"
                 android:background="#fff"
                 android:layout_width="1dp"
                 android:layout_height="40dp">
             </View>
-
             <LinearLayout
-                android:background="#ccc"
-                android:paddingRight="16dp"
+                android:background="#00BFA5"
+                android:paddingRight="8dp"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:orientation="vertical"
@@ -567,21 +579,21 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:textColor="#333"
-                    android:textSize="18dp"
+                    android:textColor="#f5f5f5"
+                    android:textSize="16dp"
                     android:gravity="right"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Total payment">
+                    android:text="Total payment:">
                 </TextView>
                 <TextView
-                    android:textColor="@color/red"
+                    android:textColor="#fff"
                     android:textSize="18dp"
                     android:gravity="right"
                     android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="$ 550">
+                    android:text="$ 505">
                 </TextView>
 
             </LinearLayout>

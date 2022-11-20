@@ -85,6 +85,14 @@ public class DetailProductFragment extends Fragment {
         // Inflate the layout for this fragment
         View view1 = inflater.inflate(R.layout.fragment_detail_product, container, false);
 
+        LinearLayout layoutAddCart = view1.findViewById(R.id.layoutAddCart);
+        layoutAddCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_detailProductFragment_to_cartFragment);
+            }
+        });
+
         // Dialog Filter
         TextView tvBuyNow = view1.findViewById(R.id.tvBuyNow);
         tvBuyNow.setOnClickListener(new View.OnClickListener() {

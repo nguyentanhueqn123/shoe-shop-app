@@ -190,14 +190,12 @@
             android:layout_height="wrap_content">
         </TextView>
         <LinearLayout
-            android:gravity="right"
-            android:layout_weight="2"
-            android:layout_marginTop="8dp"
+            android:background="@drawable/boder_box"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:background="@drawable/boder_box"
                 android:id="@+id/btnRemove"
                 android:padding="8dp"
                 android:src="@drawable/ic_baseline_remove_24"
@@ -206,6 +204,7 @@
             <TextView
                 android:id="@+id/tvQuantity"
                 android:text="1"
+                android:layout_gravity="center"
                 android:gravity="center"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -213,13 +212,13 @@
                 android:layout_width="36dp"
                 android:layout_height="36dp"/>
             <ImageView
-                android:background="@drawable/boder_box"
                 android:id="@+id/btnAdd"
                 android:padding="8dp"
                 android:src="@drawable/ic_add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
+
 
     </LinearLayout>
     <View
