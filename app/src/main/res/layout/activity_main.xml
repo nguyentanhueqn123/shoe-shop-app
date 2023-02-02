@@ -65,6 +65,18 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp">
                 </ImageView>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="-12dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/boder_round_red"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:text="3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </TextView>
 
 
             </LinearLayout>

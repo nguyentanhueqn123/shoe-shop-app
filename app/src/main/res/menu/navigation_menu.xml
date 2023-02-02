@@ -10,6 +10,10 @@
         android:icon="@drawable/ic_storefront"
         android:title="Products" />
     <item
+        android:id="@+id/menuCart"
+        android:icon="@drawable/ic_storefront"
+        android:title="Cart" />
+    <item
         android:id="@+id/menuBlog"
         android:icon="@drawable/ic_bookmarks"
         android:title="Blog" />
