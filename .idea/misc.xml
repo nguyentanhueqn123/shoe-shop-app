@@ -50,11 +50,12 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/activity_account_layout.xml" value="0.25" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/activity_search_layout.xml" value="0.264" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_account.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_blog.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_contact.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_blog.xml" value="0.264" />
-        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.264" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.20236087689713322" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_home.xml" value="0.20521590423257802" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_payment.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_products.xml" value="0.264" />

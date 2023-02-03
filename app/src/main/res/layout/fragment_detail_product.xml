@@ -582,8 +582,8 @@
                         android:layout_marginLeft="4dp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_arrow_forward_ios"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp">
+                        android:layout_width="16dp"
+                        android:layout_height="16dp">
                     </ImageView>
                 </LinearLayout>
                 <View
@@ -740,8 +740,8 @@
                         android:layout_marginLeft="4dp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_arrow_forward_ios"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp">
+                        android:layout_width="16dp"
+                        android:layout_height="16dp">
                     </ImageView>
                 </LinearLayout>
 

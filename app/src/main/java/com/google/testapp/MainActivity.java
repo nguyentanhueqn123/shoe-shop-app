@@ -45,15 +45,26 @@ public class MainActivity extends AppCompatActivity {
 //                fragmentTransaction.replace(R.id.fragment_cart, new CartFragment()).commit();
 //            }
 //        });
+
+
+
+//        ImageView imageUser = findViewById(R.id.imageUser);
+//        imageUser.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent =new Intent(MainActivity.this, account_layout.class);
+//                startActivity(intent);
+//            }
+//        });
         ImageView imageUser = findViewById(R.id.imageUser);
         imageUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this, account_layout.class);
-                startActivity(intent);
+                FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction1.replace(R.id.fragmentContainerView2, new AccountFragment()).commit();
+
             }
         });
-
         ImageView imageSearch = findViewById(R.id.imageSearch);
         imageSearch.setOnClickListener(new View.OnClickListener() {
             @Override
