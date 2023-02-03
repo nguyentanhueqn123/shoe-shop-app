@@ -542,7 +542,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:background="#00BFA5"
+            android:background="#5F9DF7"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -553,7 +553,7 @@
 
             <TextView
                 android:id="@+id/tvBuyMore"
-                android:background="#00BFA5"
+                android:background="#5F9DF7"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textSize="18dp"
@@ -570,7 +570,7 @@
                 android:layout_height="40dp">
             </View>
             <LinearLayout
-                android:background="#00BFA5"
+                android:background="#5F9DF7"
                 android:paddingRight="8dp"
                 android:gravity="center"
                 android:layout_weight="1"

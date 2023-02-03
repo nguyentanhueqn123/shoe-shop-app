@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/boder_bgroud1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     // Container Image vs Price
@@ -10,13 +11,20 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:layout_weight="3"
-            android:scaleType="centerCrop"
-            android:src="@drawable/giay3_blog"
+        <androidx.cardview.widget.CardView
+            android:layout_weight="3.3"
+            app:cardCornerRadius="12dp"
             android:layout_width="0dp"
             android:layout_height="150dp">
-        </ImageView>
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/fff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
         <LinearLayout
             android:gravity="bottom"
             android:layout_marginLeft="16dp"
@@ -230,7 +238,7 @@
     <Button
         android:id="@+id/btnBuyNow"
         android:layout_margin="16dp"
-        android:background="#F2434A"
+        android:background="@drawable/boder_btn_red"
         android:textColor="#fff"
         android:text="Buy Now"
         android:layout_width="match_parent"

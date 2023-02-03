@@ -23,25 +23,25 @@
             // header
             <LinearLayout
                 android:orientation="horizontal"
-                android:background="#FFB72B"
+                android:background="#0099ff"
                 android:layout_width="match_parent"
                 android:layout_height="112dp">
                 <LinearLayout
-                    android:background="#fff"
+                    android:background="@drawable/boder_right"
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
                         android:gravity="center"
                         android:textStyle="bold"
-                        android:textColor="#FFB72B"
+                        android:textColor="#0099ff"
                         android:textSize="13dp"
                         android:text="My account"
                         android:layout_width="100dp"
                         android:layout_height="30dp">
                     </TextView>
                     <ImageView
-                        android:layout_marginRight="10dp"
+                        android:layout_marginRight="8dp"
                         android:layout_marginLeft="-10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_arrow_forward_ios_black"
@@ -53,8 +53,9 @@
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_marginLeft="-100dp"
                     android:layout_marginTop="46dp"
-                    android:src="@drawable/fff"
+                    android:src="@drawable/avatar_girl2"
                     app:riv_oval="true"
+                    android:scaleType="centerCrop"
                     android:layout_width="50dp"
                     android:layout_height="50dp">
                 </com.makeramen.roundedimageview.RoundedImageView>
@@ -73,9 +74,10 @@
                         android:layout_height="wrap_content">
                     </TextView>
                     <TextView
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:textColor="#fff"
                         android:text="Online"
+                        android:textStyle="italic"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
@@ -85,116 +87,12 @@
             </LinearLayout>
             //end header
 
-            // sale
-            <LinearLayout
-                android:padding="16dp"
-                android:background="#fff"
-                android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:textSize="11dp"
-                        android:textColor="#111"
-                        android:text="Super Sale 50%"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="12dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:textSize="11dp"
-                        android:textColor="#111"
-                        android:text="Rush hour"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="12dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:textSize="11dp"
-                        android:textColor="#111"
-                        android:text="Everything is..."
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="12dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:textSize="11dp"
-                        android:textColor="#111"
-                        android:text="Freeship"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                </LinearLayout>
 
-
-            </LinearLayout>
-            <View
-                android:layout_marginTop="-1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#ccc">
-            </View>
-            //end sale
 
 
             // đơn mua
             <LinearLayout
+                android:layout_marginTop="14dp"
                 android:background="#fff"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
@@ -204,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/icon_voucher"
+                    android:src="@drawable/icon_purchase"
                     android:layout_width="28dp"
                     android:layout_height="28dp">
                 </ImageView>
@@ -245,53 +143,7 @@
             </View>
 
             //end đơn mua
-            <LinearLayout
-                android:background="#fff"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:src="@drawable/icon_voucher"
-                    android:layout_width="28dp"
-                    android:layout_height="28dp">
-                </ImageView>
-                <TextView
-                    android:textColor="#333"
-                    android:layout_marginLeft="16dp"
-                    android:layout_gravity="center"
-                    android:text="Recently Viewed"
-                    android:textSize="16dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
-                <TextView
-                    android:layout_marginRight="4dp"
-                    android:gravity="right"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
-                <ImageView
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_arrow_forward_ios_black"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp">
-                </ImageView>
 
-            </LinearLayout>
-            <View
-                android:layout_marginTop="-1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#ccc">
-            </View>
 
             // access
             <LinearLayout
@@ -394,7 +246,7 @@
 
             // buy again
             <LinearLayout
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="14dp"
                 android:background="#fff"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
@@ -404,7 +256,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/icon_voucher"
+                    android:src="@drawable/icon_buyagain"
                     android:layout_width="28dp"
                     android:layout_height="28dp">
                 </ImageView>
@@ -497,10 +349,11 @@
                                     android:layout_height="wrap_content">
                                 </TextView>
                                 <ImageView
+                                    android:layout_marginTop="6dp"
                                     android:layout_weight="0"
-                                    android:src="@drawable/icon_card"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp">
+                                    android:src="@drawable/icon_cart1"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp">
                                 </ImageView>
                             </LinearLayout>
                         </LinearLayout>
@@ -545,10 +398,11 @@
                                     android:layout_height="wrap_content">
                                 </TextView>
                                 <ImageView
+                                    android:layout_marginTop="6dp"
                                     android:layout_weight="0"
-                                    android:src="@drawable/icon_card"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp">
+                                    android:src="@drawable/icon_cart1"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp">
                                 </ImageView>
                             </LinearLayout>
                         </LinearLayout>
@@ -593,10 +447,11 @@
                                     android:layout_height="wrap_content">
                                 </TextView>
                                 <ImageView
+                                    android:layout_marginTop="6dp"
                                     android:layout_weight="0"
-                                    android:src="@drawable/icon_card"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp">
+                                    android:src="@drawable/icon_cart1"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp">
                                 </ImageView>
                             </LinearLayout>
                         </LinearLayout>
@@ -642,10 +497,11 @@
                                     android:layout_height="wrap_content">
                                 </TextView>
                                 <ImageView
+                                    android:layout_marginTop="6dp"
                                     android:layout_weight="0"
-                                    android:src="@drawable/icon_card"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp">
+                                    android:src="@drawable/icon_cart1"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp">
                                 </ImageView>
                             </LinearLayout>
                         </LinearLayout>
@@ -691,10 +547,11 @@
                                     android:layout_height="wrap_content">
                                 </TextView>
                                 <ImageView
+                                    android:layout_marginTop="6dp"
                                     android:layout_weight="0"
-                                    android:src="@drawable/icon_card"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp">
+                                    android:src="@drawable/icon_cart1"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp">
                                 </ImageView>
                             </LinearLayout>
                         </LinearLayout>
@@ -707,9 +564,8 @@
             </LinearLayout>
             // end buy again
 
-            // setting account
             <LinearLayout
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="14dp"
                 android:background="#fff"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
@@ -719,7 +575,144 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/icon_voucher"
+                    android:src="@drawable/icon_heart2"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp">
+                </ImageView>
+                <TextView
+                    android:textColor="#333"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center"
+                    android:text="My Likes"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_marginRight="4dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_forward_ios_black"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp">
+                </ImageView>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="-1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </View>
+            <LinearLayout
+                android:background="#fff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/icon_view"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp">
+                </ImageView>
+                <TextView
+                    android:textColor="#333"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center"
+                    android:text="Recently Viewed"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_marginRight="4dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_forward_ios_black"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp">
+                </ImageView>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="-1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc">
+            </View>
+            <LinearLayout
+                android:background="#fff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/icon_rate"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp">
+                </ImageView>
+                <TextView
+                    android:textColor="#333"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center"
+                    android:text="My Rating"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_marginRight="4dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_forward_ios_black"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp">
+                </ImageView>
+
+            </LinearLayout>
+
+
+            // setting account
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:background="#fff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/icon_user1"
                     android:layout_width="28dp"
                     android:layout_height="28dp">
                 </ImageView>
@@ -768,7 +761,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/icon_voucher"
+                    android:src="@drawable/icon_helped"
                     android:layout_width="28dp"
                     android:layout_height="28dp">
                 </ImageView>

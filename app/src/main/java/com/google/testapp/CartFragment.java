@@ -2,6 +2,7 @@ package com.google.testapp;
 
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -87,7 +88,7 @@ public class CartFragment extends Fragment {
         });
 
         // Delete product
-        LinearLayout layoutChooseItem = view.findViewById(R.id.layoutChooseItem);
+        CardView layoutChooseItem = view.findViewById(R.id.layoutChooseItem);
         ImageView btnCloseItem = view.findViewById(R.id.btnCloseItem);
         btnCloseItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,27 +139,27 @@ public class CartFragment extends Fragment {
         });
 
 
-        CheckBox cbAll = view.findViewById(R.id.cbAll);
-        CheckBox cbItem1 = view.findViewById(R.id.cbItem1);
-        CheckBox cbItem2 = view.findViewById(R.id.cbItem2);
-        CheckBox cbItem3 = view.findViewById(R.id.cbItem3);
-        cbAll.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                if(isChecked)
-                {
-                    cbItem1.setChecked(true);
-                    cbItem2.setChecked(true);
-                    cbItem3.setChecked(true);
-                }
-                else
-                {
-                    cbItem1.setChecked(false);
-                    cbItem2.setChecked(false);
-                    cbItem3.setChecked(false);
-                }
-            }
-        });
+//        CheckBox cbAll = view.findViewById(R.id.cbAll);
+//        CheckBox cbItem1 = view.findViewById(R.id.cbItem1);
+//        CheckBox cbItem2 = view.findViewById(R.id.cbItem2);
+//        CheckBox cbItem3 = view.findViewById(R.id.cbItem3);
+//        cbAll.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+//                if(isChecked)
+//                {
+//                    cbItem1.setChecked(true);
+//                    cbItem2.setChecked(true);
+//                    cbItem3.setChecked(true);
+//                }
+//                else
+//                {
+//                    cbItem1.setChecked(false);
+//                    cbItem2.setChecked(false);
+//                    cbItem3.setChecked(false);
+//                }
+//            }
+//        });
         return view;
     }
 }

@@ -1481,7 +1481,7 @@
         </ImageView>
 
         <LinearLayout
-            android:background="#00BFA5"
+            android:background="#5F9DF7"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -1489,7 +1489,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
             <LinearLayout
-                android:background="#00BFA5"
+                android:background="#5F9DF7"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:orientation="vertical"
@@ -1520,7 +1520,7 @@
 
             <LinearLayout
                 android:id="@+id/layoutAddCart"
-                android:background="#00BFA5"
+                android:background="#5F9DF7"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:orientation="vertical"
@@ -1544,7 +1544,7 @@
 
             <TextView
                 android:id="@+id/tvBuyNow"
-                android:background="#E24647"
+                android:background="#F2434A"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textSize="20dp"

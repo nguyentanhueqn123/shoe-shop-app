@@ -111,13 +111,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </TextView>
-            <com.makeramen.roundedimageview.RoundedImageView
+
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/giay1_blog">
-            </com.makeramen.roundedimageview.RoundedImageView>
+                android:layout_height="wrap_content">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/giay1_blog">
+                </com.makeramen.roundedimageview.RoundedImageView>
+            </androidx.cardview.widget.CardView>
             <TextView
                 android:layout_marginTop="8dp"
                 android:textSize="16dp"
@@ -142,14 +148,19 @@
 
             // Start Shoe 3 Blog
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:layout_marginTop="12dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/giay2_blog">
 
-            </com.makeramen.roundedimageview.RoundedImageView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/giay2_blog">
+                </com.makeramen.roundedimageview.RoundedImageView>
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="match_parent"
@@ -170,14 +181,18 @@
                 android:layout_height="wrap_content">
             </TextView>
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="12dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/giay3_blog">
-
-            </com.makeramen.roundedimageview.RoundedImageView>
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/giay3_blog">
+                </com.makeramen.roundedimageview.RoundedImageView>
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_marginTop="8dp"
@@ -302,7 +317,7 @@
                         android:layout_weight="0"
                         app:riv_oval="true"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/giay1_blog"
+                        android:src="@drawable/avatar_girl2"
                         android:layout_width="40dp"
                         android:layout_height="40dp">
 
@@ -321,7 +336,7 @@
                     <Button
                         android:layout_weight="2"
                         android:layout_marginLeft="12dp"
-                        android:background="#E24647"
+                        android:background="@drawable/boder_btn"
                         android:text="SEND"
                         android:textColor="#fff"
                         android:layout_width="80dp"
@@ -359,7 +374,7 @@
                     <com.makeramen.roundedimageview.RoundedImageView
                         app:riv_oval="true"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/giay1_blog"
+                        android:src="@drawable/avatar_girl"
                         android:layout_width="40dp"
                         android:layout_height="40dp">
 
@@ -446,7 +461,7 @@
                     <com.makeramen.roundedimageview.RoundedImageView
                         app:riv_oval="true"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/giay1_blog"
+                        android:src="@drawable/avatar_girl1"
                         android:layout_width="40dp"
                         android:layout_height="40dp">
 
