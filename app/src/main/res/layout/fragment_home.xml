@@ -1,16 +1,1411 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:orientation="vertical"
+    android:background="#eee"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Page Home" />
 
-</FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/boder_bgroud"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="22dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#333"
+                        android:text="Just do it with Nike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/boder_btn"
+                        android:text="Buy now"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                    </Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:paddingLeft="-10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="10dp"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/boder_btn2"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/preview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="For me"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <LinearLayout
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <HorizontalScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/boder_box"
+                                android:padding="8dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="6dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="90dp">
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/fff">
+                                    </com.makeramen.roundedimageview.RoundedImageView>
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:paddingTop="4dp"
+                                    android:textSize="12dp"
+                                    android:text="Bought 1 time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:layout_marginTop="4dp"
+                                        android:text="$ 250"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:textColor="#F2434A"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <ImageView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_weight="0"
+                                        android:src="@drawable/icon_cart1"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp">
+                                    </ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/boder_box"
+                                android:padding="8dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="6dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="90dp">
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/fff">
+                                    </com.makeramen.roundedimageview.RoundedImageView>
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:paddingTop="4dp"
+                                    android:textSize="12dp"
+                                    android:text="Bought 1 time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:layout_marginTop="4dp"
+                                        android:text="$ 250"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:textColor="#F2434A"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <ImageView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_weight="0"
+                                        android:src="@drawable/icon_cart1"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp">
+                                    </ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/boder_box"
+                                android:padding="8dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="6dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="90dp">
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/fff">
+                                    </com.makeramen.roundedimageview.RoundedImageView>
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:paddingTop="4dp"
+                                    android:textSize="12dp"
+                                    android:text="Bought 1 time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:layout_marginTop="4dp"
+                                        android:text="$ 250"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:textColor="#F2434A"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <ImageView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_weight="0"
+                                        android:src="@drawable/icon_cart1"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp">
+                                    </ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/boder_box"
+                                android:padding="8dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="6dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="90dp">
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/fff">
+                                    </com.makeramen.roundedimageview.RoundedImageView>
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:paddingTop="4dp"
+                                    android:textSize="12dp"
+                                    android:text="Bought 1 time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:layout_marginTop="4dp"
+                                        android:text="$ 250"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:textColor="#F2434A"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <ImageView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_weight="0"
+                                        android:src="@drawable/icon_cart1"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp">
+                                    </ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/boder_box"
+                                android:padding="8dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="6dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="90dp">
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/fff">
+                                    </com.makeramen.roundedimageview.RoundedImageView>
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:paddingTop="4dp"
+                                    android:textSize="12dp"
+                                    android:text="Bought 1 time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:layout_marginTop="4dp"
+                                        android:text="$ 250"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:textColor="#F2434A"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <ImageView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_weight="0"
+                                        android:src="@drawable/icon_cart1"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp">
+                                    </ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </RadioGroup>
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Latest Products"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_marginRight="4dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="View All"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_forward_ios_black"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp">
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                // Start layout Container Products Row 1
+                <LinearLayout
+
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_marginTop="-8dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <ImageView
+                                    android:layout_marginTop="6dp"
+                                    android:gravity="right"
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    // Product 2
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_marginTop="70dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <ImageView
+                                    android:layout_marginTop="6dp"
+                                    android:gravity="right"
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                // End layout Container Products Row 1
+
+                // Start layout Container Products Row 3
+                <LinearLayout
+                    android:layout_marginTop="-84dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_marginTop="12dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginTop="58dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <ImageView
+                                    android:layout_marginTop="6dp"
+                                    android:gravity="right"
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    // Product 2
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="80dp"
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_marginTop="-11dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <ImageView
+                                    android:layout_marginTop="6dp"
+                                    android:gravity="right"
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                // End layout Container Products Row 3
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Trending"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_marginRight="4dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="View All"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_forward_ios_black"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp">
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                // Start layout Container Products Row 1
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <TextView
+                                    android:gravity="right"
+                                    android:textColor="#F2434A"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:background="@drawable/boder_box"
+                                    android:textSize="12dp"
+                                    android:text="#Trending"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                            // Start Rate Star
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="right"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star_half"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <TextView
+                                        android:textColor="#333"
+                                        android:textSize="10dp"
+                                        android:text="Sold 9.4k"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            // End Rate Star
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    // Product 2
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <TextView
+                                    android:gravity="right"
+                                    android:textColor="#F2434A"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:background="@drawable/boder_box"
+                                    android:textSize="12dp"
+                                    android:text="#Trending"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                            // Start Rate Star
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="right"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star_half"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <TextView
+                                        android:textColor="#333"
+                                        android:textSize="10dp"
+                                        android:text="Sold 9.4k"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            // End Rate Star
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                // End layout Container Products Row 1
+
+
+
+                // Start layout Container Products Row 3
+                <LinearLayout
+                    android:layout_marginTop="-6dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <TextView
+                                    android:gravity="right"
+                                    android:textColor="#F2434A"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:background="@drawable/boder_box"
+                                    android:textSize="12dp"
+                                    android:text="#Trending"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                            // Start Rate Star
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="right"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star_half"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <TextView
+                                        android:textColor="#333"
+                                        android:textSize="10dp"
+                                        android:text="Sold 9.4k"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            // End Rate Star
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    // Product 2
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/giay_demo"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+                            </com.makeramen.roundedimageview.RoundedImageView>
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="Nike Air Force 1"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="4dp"
+                                    android:text="$ 250"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#F2434A"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <TextView
+                                    android:gravity="right"
+                                    android:textColor="#F2434A"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:background="@drawable/boder_box"
+                                    android:textSize="12dp"
+                                    android:text="#Trending"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                            // Start Rate Star
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_heart_black"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp">
+                                </ImageView>
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="right"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <ImageView
+                                        android:src="@drawable/ic_star_half"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp">
+                                    </ImageView>
+                                    <TextView
+                                        android:textColor="#333"
+                                        android:textSize="10dp"
+                                        android:text="Sold 9.4k"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            // End Rate Star
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                // End layout Container Products Row 3
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:background="@drawable/boder_bgroud1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="BE YOURSELF!"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/f1"
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp">
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/f2"
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp">
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="THIS IS THE FIRST DAY OF YOUR NEW LIFE"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="JUST DO IT!"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/f13"
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp">
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                // New foot
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="#fff"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/f11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="#111"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:text="NEW SEASON"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:text="NEW COLLECTION"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <Button
+                            android:background="@drawable/boder_bgroud"
+                            android:layout_marginTop="10dp"
+                            android:textSize="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:text="CHOOSE YOUR STYLE"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content">
+                        </Button>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/f13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                </LinearLayout>
+                // end New foot
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

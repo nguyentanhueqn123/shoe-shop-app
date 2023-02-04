@@ -179,15 +179,21 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/fff"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -195,16 +201,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
 
@@ -220,15 +234,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:src="@drawable/fff"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -236,18 +255,27 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -265,15 +293,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/fff"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -281,16 +314,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
 
@@ -306,15 +347,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:src="@drawable/fff"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -322,18 +368,27 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -353,15 +408,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/fff"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -369,16 +429,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
 
@@ -394,15 +462,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:src="@drawable/fff"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -410,18 +483,27 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -429,94 +511,7 @@
 
 
     </LinearLayout>
-    // box product 7 8
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:background="@drawable/boder_box1"
-            android:layout_weight="1"
-            android:layout_marginTop="-1dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/fff"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="8dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
-            <LinearLayout
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:textColor="#333"
-                        android:text="Nike Air Force 1"
-                        android:textSize="16dp"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content">
-                    </TextView>
 
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:background="@drawable/boder_box1"
-            android:layout_weight="1"
-            android:layout_marginLeft="-1dp"
-            android:layout_marginTop="-1dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="8dp"
-                android:src="@drawable/fff"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
-            <LinearLayout
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:textColor="#333"
-                        android:text="Nike Air Force 1"
-                        android:textSize="16dp"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-
-
-    </LinearLayout>
     // box product 9 10
     <LinearLayout
         android:orientation="horizontal"
@@ -529,15 +524,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/fff"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -545,16 +545,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
 
@@ -570,15 +578,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
-                android:src="@drawable/fff"
-                android:layout_width="60dp"
-                android:layout_height="60dp">
-            </ImageView>
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/fff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -586,18 +599,27 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_gravity="center"
                         android:layout_weight="1"
                         android:textColor="#333"
-                        android:text="Nike Air Force 1"
+                        android:text="Air Jordan 1"
                         android:textSize="16dp"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="$ 250"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

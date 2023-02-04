@@ -14,6 +14,7 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_btn2.xml" value="0.165" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_btn_red.xml" value="0.165" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_right.xml" value="0.165" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_right2.xml" value="0.165" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_round_blue.xml" value="0.165" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_round_grey.xml" value="0.177" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/drawable/boder_round_no.xml" value="0.1335" />
@@ -67,7 +68,7 @@
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_contact.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_blog.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_detail_product.xml" value="0.19704433497536947" />
-        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_home.xml" value="0.20521590423257802" />
+        <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_payment.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/fragment_products.xml" value="0.264" />
         <entry key="..\:/shoe-shop-app/app/src/main/res/layout/item_photo.xml" value="0.264" />
