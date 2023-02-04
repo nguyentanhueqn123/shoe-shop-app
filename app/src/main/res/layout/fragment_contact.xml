@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_location"
+                    android:src="@drawable/icon_location1"
                     android:layout_width="30dp"
                     android:layout_height="30dp">
 
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_email"
+                    android:src="@drawable/icon_nav_contact2"
                     android:layout_width="30dp"
                     android:layout_height="30dp">
 
@@ -158,6 +158,7 @@
                         android:layout_height="wrap_content">
                     </TextView>
                     <EditText
+                        android:textSize="16dp"
                         android:paddingLeft="12dp"
                         android:hint="your@email.com"
                         android:layout_marginTop="8dp"
@@ -172,7 +173,8 @@
                         android:layout_height="wrap_content">
                     </TextView>
                     <EditText
-                        android:paddingLeft="12dp"
+                        android:textSize="16dp"
+                        android:padding="12dp"
                         android:gravity="top"
                         android:hint="How can we help?"
                         android:layout_marginTop="8dp"

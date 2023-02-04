@@ -99,6 +99,7 @@
                               android:layout_height="wrap_content">
                           </TextView>
                           <ImageView
+                              android:layout_marginTop="2dp"
                               android:layout_gravity="center"
                               android:src="@drawable/ic_star"
                               android:layout_width="20dp"
@@ -106,6 +107,7 @@
 
                           </ImageView>
                           <TextView
+                              android:layout_marginTop="4dp"
                               android:text=" )"
                               android:textSize="16dp"
                               android:layout_width="wrap_content"
@@ -224,6 +226,7 @@
                                 android:layout_height="wrap_content">
                             </TextView>
                             <ImageView
+                                android:layout_marginTop="2dp"
                                 android:layout_gravity="center"
                                 android:src="@drawable/ic_star"
                                 android:layout_width="20dp"
@@ -231,6 +234,7 @@
 
                             </ImageView>
                             <TextView
+                                android:layout_marginTop="4dp"
                                 android:text=" )"
                                 android:textSize="16dp"
                                 android:layout_width="wrap_content"
@@ -345,6 +349,7 @@
                                 android:layout_height="wrap_content">
                             </TextView>
                             <ImageView
+                                android:layout_marginTop="2dp"
                                 android:layout_gravity="center"
                                 android:src="@drawable/ic_star"
                                 android:layout_width="20dp"
@@ -352,6 +357,7 @@
 
                             </ImageView>
                             <TextView
+                                android:layout_marginTop="4dp"
                                 android:text=" )"
                                 android:textSize="16dp"
                                 android:layout_width="wrap_content"
@@ -467,6 +473,7 @@
                                 android:layout_height="wrap_content">
                             </TextView>
                             <ImageView
+                                android:layout_marginTop="2dp"
                                 android:layout_gravity="center"
                                 android:src="@drawable/ic_star"
                                 android:layout_width="20dp"
@@ -474,6 +481,7 @@
 
                             </ImageView>
                             <TextView
+                                android:layout_marginTop="4dp"
                                 android:text=" )"
                                 android:textSize="16dp"
                                 android:layout_width="wrap_content"

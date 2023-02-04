@@ -45,7 +45,7 @@
             <LinearLayout
                 android:id="@+id/layoutFilter"
                 android:padding="8dp"
-                android:background="@drawable/boder_box"
+                android:background="@drawable/boder_shadow"
                 android:gravity="center"
                 android:layout_weight="8"
                 android:orientation="horizontal"
@@ -71,18 +71,17 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="115dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:paddingBottom="16dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
             // Start layout Container Products Row 1
             <LinearLayout
@@ -90,873 +89,991 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <LinearLayout
-                    android:id="@+id/box_product1"
-                    android:layout_marginRight="8dp"
-                    android:background="@drawable/boder_box"
-                    android:padding="8dp"
+                <androidx.cardview.widget.CardView
                     android:layout_weight="1"
-                    android:orientation="vertical"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    // Start Rate Star
-
                     <LinearLayout
-                        android:orientation="horizontal"
+                        android:id="@+id/box_product1"
+                        android:padding="10dp"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
+                        // Start Rate Star
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
                     </LinearLayout>
-                    // End Rate Star
 
+                </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
 
                 // Product 2
-                <LinearLayout
-                    android:layout_marginLeft="8dp"
-                    android:padding="8dp"
-                    android:background="@drawable/boder_box"
+                <androidx.cardview.widget.CardView
                     android:layout_weight="1"
-                    android:orientation="vertical"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-
-                    // Start Rate Star
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textColor="#F2434A"
-                        android:textSize="20dp"
-                        android:textStyle="bold"></TextView>
-
                     <LinearLayout
-                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
+                        // Start Rate Star
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
                     </LinearLayout>
-                    // End Rate Star
 
-
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
             // End layout Container Products Row 1
 
             // Start layout Container Products Row 2
             <LinearLayout
+                android:layout_marginTop="-6dp"
                 android:weightSum="2"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_marginRight="8dp"
-                    android:background="@drawable/boder_box"
-                    android:padding="8dp"
+                <androidx.cardview.widget.CardView
                     android:layout_weight="1"
-                    android:orientation="vertical"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-
-                    // Start Rate Star
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textColor="#F2434A"
-                        android:textSize="20dp"
-                        android:textStyle="bold"></TextView>
-
                     <LinearLayout
-                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
-                    </LinearLayout>
-                    // End Rate Star
+                        // Start Rate Star
 
-
-                </LinearLayout>
-
-                // Product 4
-                <LinearLayout
-                    android:layout_marginLeft="8dp"
-                    android:padding="8dp"
-                    android:background="@drawable/boder_box"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    // Start Rate Star
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
+                            android:layout_marginTop="4dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
                             </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                // Product 2
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
+                        // Start Rate Star
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
                     </LinearLayout>
-                    // End Rate Star
 
-
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
             // End layout Container Products Row 2
 
             // Start layout Container Products Row 3
             <LinearLayout
+                android:layout_marginTop="-6dp"
                 android:weightSum="2"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_marginRight="8dp"
-                    android:background="@drawable/boder_box"
-                    android:padding="8dp"
+                <androidx.cardview.widget.CardView
                     android:layout_weight="1"
-                    android:orientation="vertical"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    // Start Rate Star
-
                     <LinearLayout
-                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
-                    </LinearLayout>
-                    // End Rate Star
+                        // Start Rate Star
 
-
-                </LinearLayout>
-
-                // Product 6
-                <LinearLayout
-                    android:layout_marginLeft="8dp"
-                    android:padding="8dp"
-                    android:background="@drawable/boder_box"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    // Start Rate Star
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
+                            android:layout_marginTop="4dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
                             </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                // Product 2
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
+                        // Start Rate Star
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
                     </LinearLayout>
-                    // End Rate Star
 
-
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-            // End layout Container Products 3
+            // End layout Container Products Row 3
 
-            // Start layout Container Products 4
+            // Start layout Container Products Row 4
             <LinearLayout
+                android:layout_marginTop="-6dp"
                 android:weightSum="2"
-                android:id="@+id/layoutContainerProducts"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_marginRight="8dp"
-                    android:background="@drawable/boder_box"
-                    android:padding="8dp"
+                <androidx.cardview.widget.CardView
                     android:layout_weight="1"
-                    android:orientation="vertical"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    // Start Rate Star
-
                     <LinearLayout
-                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
-                    </LinearLayout>
-                    // End Rate Star
+                        // Start Rate Star
 
-
-                </LinearLayout>
-
-                // Product 8
-                <LinearLayout
-                    android:layout_marginLeft="8dp"
-                    android:padding="8dp"
-                    android:background="@drawable/boder_box"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/giay_demo"
-                        android:layout_width="164dp"
-                        android:layout_height="90dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Nike Air Force 1"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#111"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:textColor="#F2434A"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="12dp"
-                        android:paddingRight="12dp"
-                        android:background="@drawable/boder_box"
-                        android:textSize="12dp"
-                        android:text="#ShopTrending"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="$ 250"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#F2434A"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    // Start Rate Star
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/ic_heart_black"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp">
-                        </ImageView>
                         <LinearLayout
-                            android:layout_gravity="center"
-                            android:gravity="right"
+                            android:layout_marginTop="4dp"
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
                             </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
-                            <ImageView
-                                android:src="@drawable/ic_star_half"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp">
-                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                // Product 2
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/giay_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp">
+                        </com.makeramen.roundedimageview.RoundedImageView>
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Nike Air Force 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
                             <TextView
-                                android:textColor="#333"
-                                android:textSize="10dp"
-                                android:text="Sold 9.4k"
-                                android:layout_marginLeft="4dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:text="$ 250"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#F2434A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:gravity="right"
+                                android:textColor="#F2434A"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:background="@drawable/boder_box"
+                                android:textSize="12dp"
+                                android:text="#Trending"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                             </TextView>
                         </LinearLayout>
 
+                        // Start Rate Star
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/ic_heart_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp">
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <ImageView
+                                    android:src="@drawable/ic_star_half"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp">
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#333"
+                                    android:textSize="10dp"
+                                    android:text="Sold 9.4k"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        // End Rate Star
+
+
                     </LinearLayout>
-                    // End Rate Star
 
-
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
             // End layout Container Products Row 4
-
-
 
 
         </LinearLayout>

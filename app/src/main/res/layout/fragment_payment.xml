@@ -59,9 +59,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:src="@drawable/ic_location"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp">
+                        android:src="@drawable/icon_location1"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp">
                     </ImageView>
                     <LinearLayout
                         android:layout_weight="1"
@@ -110,16 +110,24 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:layout_weight="2"
-                        android:background="@drawable/boder_box"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/nike"
-                        android:layout_width="0dp"
-                        android:layout_height="100dp">
 
-                    </ImageView>
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/nike"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp">
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
                     <LinearLayout
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="16dp"
@@ -268,114 +276,137 @@
                     </TextView>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_marginTop="12dp"
-                    android:padding="16dp"
-                    android:background="@drawable/boder_box"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:src="@drawable/icon_give_money"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp">
-                    </ImageView>
-                    <TextView
-                        android:layout_marginLeft="16dp"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"
-                        android:text="Payment of Delivery"
-                        android:textSize="16dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_circle_check_solid"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp">
-                    </ImageView>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginTop="12dp"
-                    android:padding="16dp"
-                    android:background="@drawable/boder_box"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:src="@drawable/icon_card"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp">
-                    </ImageView>
-                    <TextView
-                        android:layout_marginLeft="16dp"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"
-                        android:text="Credit card/ Debit card"
-                        android:textSize="16dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_circle_check_solid"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp">
-                    </ImageView>
-
+                    android:layout_height="70dp">
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_margin="16dp"
+                            android:src="@drawable/icon_give_money"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp">
+                        </ImageView>
+                        <TextView
+                            android:layout_marginLeft="60dp"
+                            android:layout_gravity="center|left"
+                            android:textStyle="bold"
+                            android:text="Payment of Delivery"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <ImageView
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center|right"
+                            android:src="@drawable/ic_circle_check_solid"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="12dp"
-                    android:padding="16dp"
-                    android:background="@drawable/boder_box"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:src="@drawable/logo_momo"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp">
-                    </ImageView>
-                    <TextView
-                        android:layout_marginLeft="16dp"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"
-                        android:text="Momo Money"
-                        android:textSize="16dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <TextView
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_circle_check_solid"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp">
-                    </ImageView>
-
+                    android:layout_height="70dp">
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_margin="16dp"
+                            android:src="@drawable/icon_card"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp">
+                        </ImageView>
+                        <TextView
+                            android:layout_marginLeft="60dp"
+                            android:layout_gravity="center|left"
+                            android:textStyle="bold"
+                            android:text="Credit card/ Debit card"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <ImageView
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center|right"
+                            android:src="@drawable/ic_circle_check_solid"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_margin="16dp"
+                            android:src="@drawable/logo_momo"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp">
+                        </ImageView>
+                        <TextView
+                            android:layout_marginLeft="60dp"
+                            android:layout_gravity="center|left"
+                            android:textStyle="bold"
+                            android:text="Momo Money"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <ImageView
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center|right"
+                            android:src="@drawable/ic_circle_check_solid"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+
 
 
 
