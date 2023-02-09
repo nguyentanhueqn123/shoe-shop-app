@@ -60,6 +60,9 @@
         <action
             android:id="@+id/action_detailProductFragment_to_cartFragment"
             app:destination="@id/menuCart" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_chatbotFragment"
+            app:destination="@id/chatbotFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailBlogFragment"
@@ -91,4 +94,9 @@
             android:id="@+id/action_cartFragment_to_paymentFragment"
             app:destination="@id/paymentFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/chatbotFragment"
+        android:name="com.google.testapp.ChatbotFragment"
+        android:label="fragment_chatbot"
+        tools:layout="@layout/fragment_chatbot" />
 </navigation>

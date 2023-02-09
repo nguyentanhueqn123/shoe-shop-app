@@ -1600,6 +1600,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
             <LinearLayout
+                android:id="@+id/layout_chat"
                 android:background="#5F9DF7"
                 android:gravity="center"
                 android:layout_weight="1"
