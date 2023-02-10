@@ -28,6 +28,12 @@
         <action
             android:id="@+id/action_menuHome_to_myLikeFragment"
             app:destination="@id/myLikeFragment" />
+        <action
+            android:id="@+id/action_menuHome_to_purchaseFragment"
+            app:destination="@id/purchaseFragment" />
+        <action
+            android:id="@+id/action_menuHome_to_rateFragment2"
+            app:destination="@id/rateFragment2" />
     </fragment>
     <fragment
         android:id="@+id/menuProducts"
@@ -123,4 +129,26 @@
             android:id="@+id/action_myLikeFragment_to_menuHome"
             app:destination="@id/menuHome" />
     </fragment>
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.google.testapp.PurchaseFragment"
+        android:label="fragment_purchase"
+        tools:layout="@layout/fragment_purchase" />
+    <fragment
+        android:id="@+id/rateFragment2"
+        android:name="com.google.testapp.RateFragment"
+        android:label="fragment_rate"
+        tools:layout="@layout/fragment_rate" >
+        <action
+            android:id="@+id/action_rateFragment2_to_menuHome"
+            app:destination="@id/menuHome" />
+        <action
+            android:id="@+id/action_rateFragment2_to_detailRateFragment"
+            app:destination="@id/detailRateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailRateFragment"
+        android:name="com.google.testapp.DetailRateFragment"
+        android:label="fragment_detail_rate"
+        tools:layout="@layout/fragment_detail_rate" />
 </navigation>

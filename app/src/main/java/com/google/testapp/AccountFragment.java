@@ -76,6 +76,30 @@ public class AccountFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_menuHome_to_myLikeFragment);
             }
         });
+
+        LinearLayout linearLayout_purchase = view.findViewById(R.id.linearLayout_purchase);
+        linearLayout_purchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_menuHome_to_purchaseFragment);
+            }
+        });
+
+        LinearLayout linearLayout_combo = view.findViewById(R.id.linearLayout_combo);
+        linearLayout_combo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_menuHome_to_purchaseFragment);
+            }
+        });
+
+        LinearLayout linearLayout_rate = view.findViewById(R.id.linearLayout_rate);
+        linearLayout_rate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_menuHome_to_rateFragment2);
+            }
+        });
         return view;
     }
 }

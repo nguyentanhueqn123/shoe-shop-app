@@ -92,6 +92,7 @@
 
             // đơn mua
             <LinearLayout
+                android:id="@+id/linearLayout_purchase"
                 android:layout_marginTop="14dp"
                 android:background="#fff"
                 android:paddingLeft="16dp"
@@ -147,6 +148,7 @@
 
             // access
             <LinearLayout
+                android:id="@+id/linearLayout_combo"
                 android:padding="16dp"
                 android:background="#fff"
                 android:layout_width="match_parent"
@@ -158,32 +160,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
                         android:layout_width="50dp"
-                        android:layout_height="50dp">
-                    </com.makeramen.roundedimageview.RoundedImageView>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="11dp"
-                        android:textColor="#111"
-                        android:text="To Pay"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="12dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp">
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:background="@drawable/boder_round_no"
+                        android:src="@drawable/icon_box"
+                        app:riv_oval="true">
+
                     </com.makeramen.roundedimageview.RoundedImageView>
                     <TextView
                         android:layout_marginTop="12dp"
@@ -201,11 +184,15 @@
                     android:orientation="vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
                         android:layout_width="50dp"
-                        android:layout_height="50dp">
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:background="@drawable/boder_round_no"
+                        android:src="@drawable/icon_truck2"
+                        app:riv_oval="true">
+
                     </com.makeramen.roundedimageview.RoundedImageView>
                     <TextView
                         android:layout_marginTop="12dp"
@@ -216,6 +203,7 @@
                         android:layout_height="wrap_content">
                     </TextView>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_marginLeft="12dp"
                     android:layout_weight="1"
@@ -224,16 +212,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <com.makeramen.roundedimageview.RoundedImageView
-                        android:src="#ccc"
-                        app:riv_oval="true"
                         android:layout_width="50dp"
-                        android:layout_height="50dp">
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:background="@drawable/boder_round_no"
+                        android:src="@drawable/icon_complete"
+                        app:riv_oval="true">
+
                     </com.makeramen.roundedimageview.RoundedImageView>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textSize="11dp"
                         android:textColor="#111"
-                        android:text="To Rate"
+                        android:text="Completed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                     </TextView>
@@ -684,6 +675,8 @@
                 android:background="#ccc">
             </View>
             <LinearLayout
+                android:id="@+id/linearLayout_rate"
+
                 android:background="#fff"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"

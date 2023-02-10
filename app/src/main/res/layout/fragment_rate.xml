@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+    tools:context=".RateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:padding="16dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btnBackSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/boder_round_grey"
+            android:padding="4dp"
+            android:src="@drawable/ic_back_white">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center"
+            android:text="Rating Product"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#fff"
+            android:paddingLeft="12dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_weight="0.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_marginTop="-6dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#333"
+                    android:textStyle="bold"
+                    android:text="Nike Air Force 1"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="Size: 42"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:text="Total: "
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/red"
+                                android:text="$ 500"
+                                android:textSize="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnRateNow"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder_btn"
+                        android:textColor="#fff"
+                        android:text="Rate now"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:background="#fff"
+            android:paddingLeft="12dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_weight="0.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_marginTop="-6dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#333"
+                    android:textStyle="bold"
+                    android:text="Nike Air Force 1"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="Size: 42"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:text="Total: "
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/red"
+                                android:text="$ 500"
+                                android:textSize="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder_btn"
+                        android:textColor="#fff"
+                        android:text="Rate Now"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
