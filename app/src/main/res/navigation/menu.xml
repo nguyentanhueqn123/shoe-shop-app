@@ -22,6 +22,12 @@
         <action
             android:id="@+id/action_menuHome_to_cartFragment"
             app:destination="@id/menuCart" />
+        <action
+            android:id="@+id/action_menuHome_to_accountSettingFragment"
+            app:destination="@id/accountSettingFragment" />
+        <action
+            android:id="@+id/action_menuHome_to_myLikeFragment"
+            app:destination="@id/myLikeFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuProducts"
@@ -99,4 +105,22 @@
         android:name="com.google.testapp.ChatbotFragment"
         android:label="fragment_chatbot"
         tools:layout="@layout/fragment_chatbot" />
+    <fragment
+        android:id="@+id/accountSettingFragment"
+        android:name="com.google.testapp.AccountSettingFragment"
+        android:label="fragment_account_setting"
+        tools:layout="@layout/fragment_account_setting" >
+        <action
+            android:id="@+id/action_accountSettingFragment_to_menuHome"
+            app:destination="@id/menuHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/myLikeFragment"
+        android:name="com.google.testapp.MyLikeFragment"
+        android:label="fragment_my_like"
+        tools:layout="@layout/fragment_my_like" >
+        <action
+            android:id="@+id/action_myLikeFragment_to_menuHome"
+            app:destination="@id/menuHome" />
+    </fragment>
 </navigation>

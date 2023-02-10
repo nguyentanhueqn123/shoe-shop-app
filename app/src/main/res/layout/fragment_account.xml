@@ -588,6 +588,7 @@
             // end buy again
 
             <LinearLayout
+                android:id="@+id/linearLayout_mylike"
                 android:layout_marginTop="14dp"
                 android:background="#fff"
                 android:paddingLeft="16dp"
@@ -606,7 +607,7 @@
                     android:textColor="#333"
                     android:layout_marginLeft="16dp"
                     android:layout_gravity="center"
-                    android:text="My Likes"
+                    android:text="My Favourite"
                     android:textSize="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -725,6 +726,7 @@
 
             // setting account
             <LinearLayout
+                android:id="@+id/linearLayout_Setting"
                 android:layout_marginTop="14dp"
                 android:background="#fff"
                 android:paddingLeft="16dp"

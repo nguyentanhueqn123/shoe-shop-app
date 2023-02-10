@@ -8,14 +8,20 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link AccountFragment#newInstance} factory method to
+ * Use the {@link AccountSettingFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AccountFragment extends Fragment {
+public class AccountSettingFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +32,7 @@ public class AccountFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AccountFragment() {
+    public AccountSettingFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +42,11 @@ public class AccountFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AccountFragment.
+     * @return A new instance of fragment AccountSettingFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static AccountFragment newInstance(String param1, String param2) {
-        AccountFragment fragment = new AccountFragment();
+    public static AccountSettingFragment newInstance(String param1, String param2) {
+        AccountSettingFragment fragment = new AccountSettingFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,21 +67,34 @@ public class AccountFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_account, container, false);
-        LinearLayout linearLayout_setting = view.findViewById(R.id.linearLayout_Setting);
-        linearLayout_setting.setOnClickListener(new View.OnClickListener() {
+        View view = inflater.inflate(R.layout.fragment_account_setting, container, false);
+
+        Spinner spinnerList =(Spinner) view.findViewById(R.id.spinner1);
+        ArrayList<String> arrayList = new ArrayList<String>();
+        arrayList.add("Male");
+        arrayList.add("Female");
+        arrayList.add("Other");
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this.getContext(), android.R.layout.simple_list_item_1, arrayList);
+        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerList.setAdapter(arrayAdapter);
+
+        Button btnUpdateAccount = view.findViewById(R.id.btnUpdateAccount);
+        btnUpdateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_menuHome_to_accountSettingFragment);
+                Toast.makeText(getContext(), "Update successful", Toast.LENGTH_SHORT).show();
+                getActivity().onBackPressed();
+
             }
         });
-        LinearLayout linearLayout_mylike = view.findViewById(R.id.linearLayout_mylike);
-        linearLayout_mylike.setOnClickListener(new View.OnClickListener() {
+        ImageView btnBackSetting = view.findViewById(R.id.btnBackSetting);
+        btnBackSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_menuHome_to_myLikeFragment);
+                getActivity().onBackPressed();
             }
         });
+
         return view;
     }
 }
